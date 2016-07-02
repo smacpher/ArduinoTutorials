@@ -16,7 +16,7 @@
 
 // Define constants (constants cannot change; at compile time, they are converted to their values permanently)
 const int sensorPin = A0;
-const float baselineTemp = 25.0;
+const float baselineTemp = 20.0;
 const int output_pins_size = 3;
 const int temp_interval = 2;
 
@@ -77,5 +77,5 @@ void loop() {
     digitalWrite(outputPins[2], HIGH);
   }
   // Give arduino's ADC some time to process
-  delay(1);
+  delay(2);
 }
